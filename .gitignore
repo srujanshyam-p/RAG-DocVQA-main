@@ -174,3 +174,4 @@ wandb/
 temp*
 *.ttf
 .gradio
+.venv310/

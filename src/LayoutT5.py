@@ -8,7 +8,6 @@ from transformers.utils import (
 	replace_return_docstrings,
 )
 from typing import Optional, Tuple, Union
-from transformers.models.t5.modeling_t5 import auto_docstring
 import warnings
 from dataclasses import dataclass
 
@@ -26,7 +25,6 @@ class LayoutT5ForConditionalGeneration(T5ForConditionalGeneration):
 		# print("layout classifier weight:", self.layout_classifier.weight.shape, self.layout_classifier.weight)
 		# print("layout classifier bias:", self.layout_classifier.bias.shape, self.layout_classifier.bias)
 
-	@auto_docstring
 	def forward(
 		self,
 		input_ids: Optional[torch.LongTensor] = None,
